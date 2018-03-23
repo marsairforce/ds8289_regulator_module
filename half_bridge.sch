@@ -1,0 +1,377 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:local
+LIBS:regulator_module-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R?
+U 1 1 58C58231
+P 4300 2300
+AR Path="/58C57FDA/58C58231" Ref="R?"  Part="1" 
+AR Path="/58C599BC/58C58231" Ref="R?"  Part="1" 
+AR Path="/58C599B4/58C58231" Ref="R?"  Part="1" 
+F 0 "R?" V 4380 2300 50  0000 C CNN
+F 1 "10k" V 4300 2300 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4230 2300 50  0001 C CNN
+F 3 "" H 4300 2300 50  0000 C CNN
+	1    4300 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NMOS_GSD Q?
+U 1 1 58C58238
+P 4200 2900
+AR Path="/58C57FDA/58C58238" Ref="Q?"  Part="1" 
+AR Path="/58C599BC/58C58238" Ref="Q?"  Part="1" 
+AR Path="/58C599B4/58C58238" Ref="Q?"  Part="1" 
+F 0 "Q?" H 4400 2950 50  0000 L CNN
+F 1 "BSS138L" H 4400 2850 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 4400 3000 50  0001 C CNN
+F 3 "" H 4200 2900 50  0000 C CNN
+	1    4200 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_PMOS_GSD Q?
+U 1 1 58C5823F
+P 4950 2300
+AR Path="/58C57FDA/58C5823F" Ref="Q?"  Part="1" 
+AR Path="/58C599BC/58C5823F" Ref="Q?"  Part="1" 
+AR Path="/58C599B4/58C5823F" Ref="Q?"  Part="1" 
+F 0 "Q?" H 5150 2350 50  0000 L CNN
+F 1 "BSS84L" H 5150 2250 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5150 2400 50  0001 C CNN
+F 3 "" H 4950 2300 50  0000 C CNN
+	1    4950 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NMOS_GSD Q?
+U 1 1 58C58246
+P 4950 2900
+AR Path="/58C57FDA/58C58246" Ref="Q?"  Part="1" 
+AR Path="/58C599BC/58C58246" Ref="Q?"  Part="1" 
+AR Path="/58C599B4/58C58246" Ref="Q?"  Part="1" 
+F 0 "Q?" H 5150 2950 50  0000 L CNN
+F 1 "BSS138L" H 5150 2850 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5150 3000 50  0001 C CNN
+F 3 "" H 4950 2900 50  0000 C CNN
+	1    4950 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 58C5824D
+P 3800 3050
+AR Path="/58C57FDA/58C5824D" Ref="R?"  Part="1" 
+AR Path="/58C599BC/58C5824D" Ref="R?"  Part="1" 
+AR Path="/58C599B4/58C5824D" Ref="R?"  Part="1" 
+F 0 "R?" V 3880 3050 50  0000 C CNN
+F 1 "10k" V 3800 3050 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 3730 3050 50  0001 C CNN
+F 3 "" H 3800 3050 50  0000 C CNN
+	1    3800 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2300 4750 2900
+Wire Wire Line
+	5050 2500 5050 2700
+Wire Wire Line
+	5050 2600 5350 2600
+Connection ~ 5050 2600
+Wire Wire Line
+	4750 2600 4300 2600
+Wire Wire Line
+	4300 2450 4300 2700
+Connection ~ 4750 2600
+Connection ~ 4300 2600
+Wire Wire Line
+	5050 1550 5050 2100
+Wire Wire Line
+	4300 1950 4300 2150
+Wire Wire Line
+	3600 2900 4000 2900
+Wire Wire Line
+	3800 3200 3800 3250
+Wire Wire Line
+	3800 3250 4300 3250
+Wire Wire Line
+	4300 3100 4300 3550
+Wire Wire Line
+	5050 3250 5050 3100
+Connection ~ 4300 3250
+Text HLabel 3600 1550 0    60   Input ~ 0
+Vcc
+$Comp
+L D D?
+U 1 1 58C5826A
+P 4600 1550
+AR Path="/58C57FDA/58C5826A" Ref="D?"  Part="1" 
+AR Path="/58C599BC/58C5826A" Ref="D?"  Part="1" 
+AR Path="/58C599B4/58C5826A" Ref="D?"  Part="1" 
+F 0 "D?" H 4600 1650 50  0000 C CNN
+F 1 "LL4148" H 4600 1450 50  0000 C CNN
+F 2 "Local:SOD-80" H 4600 1550 50  0001 C CNN
+F 3 "" H 4600 1550 50  0000 C CNN
+	1    4600 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 58C58271
+P 5400 1950
+AR Path="/58C57FDA/58C58271" Ref="C?"  Part="1" 
+AR Path="/58C599BC/58C58271" Ref="C?"  Part="1" 
+AR Path="/58C599B4/58C58271" Ref="C?"  Part="1" 
+F 0 "C?" H 5425 2050 50  0000 L CNN
+F 1 "0.1uF" H 5425 1850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5438 1800 50  0001 C CNN
+F 3 "" H 5400 1950 50  0000 C CNN
+	1    5400 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 58C58278
+P 5500 2600
+AR Path="/58C57FDA/58C58278" Ref="R?"  Part="1" 
+AR Path="/58C599BC/58C58278" Ref="R?"  Part="1" 
+AR Path="/58C599B4/58C58278" Ref="R?"  Part="1" 
+F 0 "R?" V 5580 2600 50  0000 C CNN
+F 1 "10k" V 5500 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 5430 2600 50  0001 C CNN
+F 3 "" H 5500 2600 50  0000 C CNN
+	1    5500 2600
+	0    1    1    0   
+$EndComp
+Text HLabel 3600 3550 0    60   Input ~ 0
+GND
+Wire Wire Line
+	5050 1550 4750 1550
+Wire Wire Line
+	4450 1550 3600 1550
+Wire Wire Line
+	4300 3550 3600 3550
+Wire Wire Line
+	5050 3250 6600 3250
+Wire Wire Line
+	5750 1950 5750 3250
+Connection ~ 5750 3250
+Text HLabel 3600 2900 0    60   Input ~ 0
+D_high
+Connection ~ 3800 2900
+$Comp
+L R R?
+U 1 1 58C5828B
+P 4300 4300
+AR Path="/58C57FDA/58C5828B" Ref="R?"  Part="1" 
+AR Path="/58C599BC/58C5828B" Ref="R?"  Part="1" 
+AR Path="/58C599B4/58C5828B" Ref="R?"  Part="1" 
+F 0 "R?" V 4380 4300 50  0000 C CNN
+F 1 "10k" V 4300 4300 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4230 4300 50  0001 C CNN
+F 3 "" H 4300 4300 50  0000 C CNN
+	1    4300 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NMOS_GSD Q?
+U 1 1 58C58292
+P 4200 4900
+AR Path="/58C57FDA/58C58292" Ref="Q?"  Part="1" 
+AR Path="/58C599BC/58C58292" Ref="Q?"  Part="1" 
+AR Path="/58C599B4/58C58292" Ref="Q?"  Part="1" 
+F 0 "Q?" H 4400 4950 50  0000 L CNN
+F 1 "BSS138L" H 4400 4850 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 4400 5000 50  0001 C CNN
+F 3 "" H 4200 4900 50  0000 C CNN
+	1    4200 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_PMOS_GSD Q?
+U 1 1 58C58299
+P 4950 4300
+AR Path="/58C57FDA/58C58299" Ref="Q?"  Part="1" 
+AR Path="/58C599BC/58C58299" Ref="Q?"  Part="1" 
+AR Path="/58C599B4/58C58299" Ref="Q?"  Part="1" 
+F 0 "Q?" H 5150 4350 50  0000 L CNN
+F 1 "BSS84L" H 5150 4250 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5150 4400 50  0001 C CNN
+F 3 "" H 4950 4300 50  0000 C CNN
+	1    4950 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NMOS_GSD Q?
+U 1 1 58C582A0
+P 4950 4900
+AR Path="/58C57FDA/58C582A0" Ref="Q?"  Part="1" 
+AR Path="/58C599BC/58C582A0" Ref="Q?"  Part="1" 
+AR Path="/58C599B4/58C582A0" Ref="Q?"  Part="1" 
+F 0 "Q?" H 5150 4950 50  0000 L CNN
+F 1 "BSS138L" H 5150 4850 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 5150 5000 50  0001 C CNN
+F 3 "" H 4950 4900 50  0000 C CNN
+	1    4950 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 58C582A7
+P 3800 5050
+AR Path="/58C57FDA/58C582A7" Ref="R?"  Part="1" 
+AR Path="/58C599BC/58C582A7" Ref="R?"  Part="1" 
+AR Path="/58C599B4/58C582A7" Ref="R?"  Part="1" 
+F 0 "R?" V 3880 5050 50  0000 C CNN
+F 1 "10k" V 3800 5050 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 3730 5050 50  0001 C CNN
+F 3 "" H 3800 5050 50  0000 C CNN
+	1    3800 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 4300 4750 4900
+Wire Wire Line
+	5050 4500 5050 4700
+Connection ~ 5050 4600
+Wire Wire Line
+	4750 4600 4300 4600
+Wire Wire Line
+	4300 4450 4300 4700
+Connection ~ 4750 4600
+Connection ~ 4300 4600
+Wire Wire Line
+	5050 3950 5050 4100
+Wire Wire Line
+	3600 3950 5050 3950
+Wire Wire Line
+	4300 3950 4300 4150
+Wire Wire Line
+	3800 5200 3800 5250
+Wire Wire Line
+	3600 5250 6400 5250
+Wire Wire Line
+	4300 5250 4300 5100
+Wire Wire Line
+	5050 5250 5050 5100
+Connection ~ 4300 5250
+Text HLabel 3600 4900 0    60   Input ~ 0
+D_low
+Wire Wire Line
+	3600 4900 4000 4900
+Connection ~ 3800 4900
+Text HLabel 3600 5250 0    60   Input ~ 0
+GND
+Connection ~ 3800 5250
+Text HLabel 3600 3950 0    60   Input ~ 0
+Vin
+$Comp
+L R R?
+U 1 1 58C582C9
+P 5350 4600
+AR Path="/58C57FDA/58C582C9" Ref="R?"  Part="1" 
+AR Path="/58C599BC/58C582C9" Ref="R?"  Part="1" 
+AR Path="/58C599B4/58C582C9" Ref="R?"  Part="1" 
+F 0 "R?" V 5430 4600 50  0000 C CNN
+F 1 "10k" V 5350 4600 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 5280 4600 50  0001 C CNN
+F 3 "" H 5350 4600 50  0000 C CNN
+	1    5350 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 4600 5200 4600
+$Comp
+L Q_NMOS_GSD Q?
+U 1 1 58C582D1
+P 6300 4600
+AR Path="/58C57FDA/58C582D1" Ref="Q?"  Part="1" 
+AR Path="/58C599BC/58C582D1" Ref="Q?"  Part="1" 
+AR Path="/58C599B4/58C582D1" Ref="Q?"  Part="1" 
+F 0 "Q?" H 6500 4650 50  0000 L CNN
+F 1 "DMN10H170SK3" H 6500 4550 50  0000 L CNN
+F 2 "Local:TO252" H 6500 4700 50  0001 C CNN
+F 3 "" H 6300 4600 50  0000 C CNN
+	1    6300 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NMOS_GSD Q?
+U 1 1 58C582D8
+P 6300 2600
+AR Path="/58C57FDA/58C582D8" Ref="Q?"  Part="1" 
+AR Path="/58C599BC/58C582D8" Ref="Q?"  Part="1" 
+AR Path="/58C599B4/58C582D8" Ref="Q?"  Part="1" 
+F 0 "Q?" H 6500 2650 50  0000 L CNN
+F 1 "DMN10H170SK3" H 6500 2550 50  0000 L CNN
+F 2 "Local:TO252" H 6500 2700 50  0001 C CNN
+F 3 "" H 6300 2600 50  0000 C CNN
+	1    6300 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 2800 6400 4400
+Connection ~ 6400 3250
+Text HLabel 6600 3250 2    60   Output ~ 0
+Vout
+Text HLabel 3600 1350 0    60   Input ~ 0
+Vin
+Wire Wire Line
+	3600 1350 6400 1350
+Wire Wire Line
+	6400 1350 6400 2400
+Wire Wire Line
+	6400 5250 6400 4800
+Wire Wire Line
+	5650 2600 6100 2600
+Wire Wire Line
+	5500 4600 6100 4600
+Wire Wire Line
+	5750 1950 5550 1950
+Wire Wire Line
+	4300 1950 5250 1950
+Connection ~ 5050 1950
+$EndSCHEMATC

@@ -1,0 +1,256 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:local
+LIBS:regulator_module-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "5V, 5A regulator"
+Date "2017-02-26"
+Rev "1"
+Comp "marsairforce.com"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RT8289 U1
+U 1 1 58AF9F8A
+P 5400 3600
+F 0 "U1" H 5750 3850 60  0000 C CNN
+F 1 "RT8289" H 5400 3600 60  0000 C CNN
+F 2 "Local:SOP-8_Exposed_Pad" H 5400 3100 60  0001 C CNN
+F 3 "" H 5400 3100 60  0001 C CNN
+	1    5400 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 58AF9FC3
+P 6300 3400
+F 0 "C4" H 6325 3500 50  0000 L CNN
+F 1 "0.01uF" H 6325 3300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6338 3250 50  0001 C CNN
+F 3 "" H 6300 3400 50  0000 C CNN
+	1    6300 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Schottky D1
+U 1 1 58AF9FE8
+P 6300 4100
+F 0 "D1" H 6300 4200 50  0000 C CNN
+F 1 "B550C-13-F" H 6300 4000 50  0001 C CNN
+F 2 "Diodes_SMD:DO-214AB" H 6300 4100 50  0001 C CNN
+F 3 "" H 6300 4100 50  0000 C CNN
+	1    6300 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L L L1
+U 1 1 58AFA056
+P 6750 3550
+F 0 "L1" V 6700 3550 50  0000 C CNN
+F 1 "10uH" V 6825 3550 50  0000 C CNN
+F 2 "Local:Inductor_SMD_12.7mm" H 6750 3550 50  0001 C CNN
+F 3 "" H 6750 3550 50  0000 C CNN
+	1    6750 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C5
+U 1 1 58AFA098
+P 7500 3700
+F 0 "C5" H 7525 3800 50  0000 L CNN
+F 1 "47uF" H 7525 3600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 7538 3550 50  0001 C CNN
+F 3 "" H 7500 3700 50  0000 C CNN
+	1    7500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 58AFA0EC
+P 7200 3700
+F 0 "R2" V 7280 3700 50  0000 C CNN
+F 1 "10K" V 7200 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 7130 3700 50  0001 C CNN
+F 3 "" H 7200 3700 50  0000 C CNN
+	1    7200 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 58B26529
+P 3850 3400
+F 0 "C1" H 3875 3500 50  0000 L CNN
+F 1 "4.7uF" H 3875 3300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 3888 3250 50  0001 C CNN
+F 3 "" H 3850 3400 50  0000 C CNN
+	1    3850 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 58B26680
+P 7800 3700
+F 0 "C6" H 7825 3800 50  0000 L CNN
+F 1 "47uF" H 7825 3600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 7838 3550 50  0001 C CNN
+F 3 "" H 7800 3700 50  0000 C CNN
+	1    7800 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 58B26BB8
+P 7200 4000
+F 0 "R3" V 7280 4000 50  0000 C CNN
+F 1 "3.24K" V 7200 4000 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 7130 4000 50  0001 C CNN
+F 3 "" H 7200 4000 50  0000 C CNN
+	1    7200 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 58B30DE2
+P 4450 3400
+F 0 "R1" V 4530 3400 50  0000 C CNN
+F 1 "100K" V 4450 3400 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" V 4380 3400 50  0001 C CNN
+F 3 "" H 4450 3400 50  0000 C CNN
+	1    4450 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 58B265F1
+P 4150 3400
+F 0 "C2" H 4175 3500 50  0000 L CNN
+F 1 "4.7uF" H 4175 3300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 4188 3250 50  0001 C CNN
+F 3 "" H 4150 3400 50  0000 C CNN
+	1    4150 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 58B317BF
+P 4450 3700
+F 0 "C3" H 4475 3800 50  0000 L CNN
+F 1 "0.01uF" H 4475 3600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4488 3550 50  0001 C CNN
+F 3 "" H 4450 3700 50  0000 C CNN
+	1    4450 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3550 4750 3550
+Wire Wire Line
+	3550 3950 4750 3950
+Wire Wire Line
+	4450 3850 4450 4250
+Connection ~ 4450 3950
+Wire Wire Line
+	3550 3250 4750 3250
+Connection ~ 3850 3250
+Connection ~ 4150 3250
+Connection ~ 4450 3250
+Wire Wire Line
+	3850 3550 3850 3950
+Connection ~ 3850 3950
+Wire Wire Line
+	4150 3550 4150 3950
+Connection ~ 4150 3950
+Wire Wire Line
+	3550 3650 4300 3650
+Wire Wire Line
+	4300 3650 4300 3550
+Connection ~ 4450 3550
+Wire Wire Line
+	6050 3250 6300 3250
+Wire Wire Line
+	6050 3550 6600 3550
+Connection ~ 6300 3550
+Wire Wire Line
+	4750 3850 4450 3850
+Wire Wire Line
+	6050 3850 7200 3850
+Wire Wire Line
+	6300 3950 6300 3550
+Wire Wire Line
+	6900 3550 8100 3550
+Connection ~ 7200 3550
+Connection ~ 7500 3550
+Wire Wire Line
+	7200 4250 7200 4150
+Wire Wire Line
+	7500 4250 7500 3850
+Wire Wire Line
+	7800 4250 7800 3850
+Connection ~ 7800 3550
+$Comp
+L CONN_01X04 P1
+U 1 1 58C73417
+P 2650 3450
+F 0 "P1" H 2650 3650 50  0000 C CNN
+F 1 "J1" V 2750 3450 50  0000 C CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_4pol" H 2650 3450 50  0001 C CNN
+F 3 "" H 2650 3450 50  0000 C CNN
+	1    2650 3450
+	-1   0    0    -1  
+$EndComp
+Text Label 2850 3300 0    60   ~ 0
+VIN
+Text Label 2850 3400 0    60   ~ 0
+EN
+Text Label 2850 3500 0    60   ~ 0
+GND
+Wire Wire Line
+	4450 4250 7800 4250
+Connection ~ 6300 4250
+Connection ~ 7200 4250
+Connection ~ 7500 4250
+Text Label 2850 3600 0    60   ~ 0
+VOUT
+Text Label 3550 3250 0    60   ~ 0
+VIN
+Text Label 3550 3650 0    60   ~ 0
+EN
+Text Label 3550 3950 0    60   ~ 0
+GND
+Text Label 8100 3550 0    60   ~ 0
+VOUT
+$EndSCHEMATC
